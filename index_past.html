@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ISMIR 2018 Submission 131</title>
+		  <script type="text/javascript" async
+  		   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML" async>
+		  </script>
+    </head>
+    <body>
+        <h1>ISMIR 2018 Submission 131</h1>
+        <h2>Music Generation and Transformation with Moment Matching Scattering Inverse Networks</h2>
+        <p>This page allows to listen to the audio samples presented in the submission file.</p>
+
+        <div style="width: 100%; overflow:hidden">
+        	<div style="width: 25%; float:left">
+        		<img src="./figs/reconstruction/nsynth/inverse_problem_testing_groundtruth_40.png" alt="Groundtruth NSynth" width=70%>
+        		</img>
+        		<br>
+	        	<audio src="./figs/reconstruction/nsynth/inverse_problem_testing_groundtruth_40.wav" controls></audio>
+	        </div>
+        	<div style="width: 25%; float: left">
+        		<img src="./figs/reconstruction/nsynth/inverse_problem_testing_recovered_40.png" alt="Recovered NSynth" width=70%></img>
+        		<br>
+        		<audio src="./figs/reconstruction/nsynth/inverse_problem_testing_recovered_40.wav" controls></audio>
+        	</div>
+        </div>
+        <div style="width: 100%; overflow:hidden">
+        	<div style="width: 25%; float:left">
+        		<img src="./figs/reconstruction/beethoven/inverse_problem_testing_groundtruth_10.png" alt="Groundtruth Beethoven" width=70%>
+        		</img>
+        		<br>
+	        	<audio type="audio/mp3" src="./figs/reconstruction/beethoven/inverse_problem_testing_groundtruth_10.wav" controls></audio>
+	        </div>
+        	<div style="width: 25%; float: left">
+        		<img src="./figs/reconstruction/beethoven/inverse_problem_testing_recovered_10.png" alt="Recovered Beethoven" width=70%></img>
+        		<br>
+        		<audio type="audio/wav" src="./figs/reconstruction/beethoven/inverse_problem_testing_recovered_10.wav" controls></audio>
+        	</div>
+        </div>
+        <p><b>Figure 4.</b> Reconstruction with the MM-SIN \(G\). Left: Original test sample \(X\). Right: Reconstruction \(G(Z)\) for \(Z=LS_J X\). Top: NSynth dataset.
+        	Bottom: Beethoven dataset. A different network was trained for each dataset.
+        </p>
+
+        <div style="width: 100%; overflow:hidden">
+        	<div style="width: 25%; float:left">
+        		<img src="./figs/generation/beethoven/generation_0.png" alt="Generated Beethoven" width=70%>
+        		</img>
+        		<br>
+	        	<audio src="./figs/generation/beethoven/generation_0.wav" controls></audio>
+	        </div>
+        	<div style="width: 25%; float: left">
+        		<img src="./figs/generation/beethoven/generation_2.png" alt="Generated Beethoven" width=70%></img>
+        		<br>
+        		<audio src="./figs/generation/beethoven/generation_2.wav" controls></audio>
+        	</div>
+        </div>
+        <p><b>Figure 5.</b> Musical signal \(G(Z)\) generated from a white noise \(Z\)n where \(G\) is learned on the Beethoven dataset. Each line corresponds to an independent sample obtained from a different white noise realization.
+        The resulting signal lasts about \(4 \mathrm{s}\).
+        </p>
+
+        <div style="width: 100%; overflow:hidden">
+        	<div style="width: 25%; float:left">
+        		<img src="./figs/interpolation/interpolation_0_2_10.png" alt="Theta 1.0" width=70%>
+        		</img>
+        		<br>
+	        	<audio src="./figs/interpolation/interpolation_0_2_10.wav" controls></audio>
+	        </div>
+        	<div style="width: 25%; float:left">
+        		<img src="./figs/interpolation/interpolation_0_2_05.png" alt="Theta 0.5" width=70%>
+        		</img>
+        		<br>
+	        	<audio src="./figs/interpolation/interpolation_0_2_05.wav" controls></audio>
+	        </div>
+        	<div style="width: 25%; float:left">
+        		<img src="./figs/interpolation/interpolation_0_2_00.png" alt="Theta 0.0" width=70%>
+        		</img>
+        		<br>
+	        	<audio src="./figs/interpolation/interpolation_0_2_00.wav" controls></audio>
+	        </div>
+        </div>
+        <div style="width: 100%; overflow:hidden">
+        	<div style="width: 25%; float:left">
+        		<img src="./figs/interpolation/interpolation_5_2_10.png" alt="Theta 1.0" width=70%>
+        		</img>
+        		<br>
+	        	<audio src="./figs/interpolation/interpolation_5_2_10.wav" controls></audio>
+	        </div>
+        	<div style="width: 25%; float:left">
+        		<img src="./figs/interpolation/interpolation_5_2_05.png" alt="Theta 0.5" width=70%>
+        		</img>
+        		<br>
+	        	<audio src="./figs/interpolation/interpolation_5_2_05.wav" controls></audio>
+	        </div>
+        	<div style="width: 25%; float:left">
+        		<img src="./figs/interpolation/interpolation_5_2_00.png" alt="Theta 0.0" width=70%>
+        		</img>
+        		<br>
+	        	<audio src="./figs/interpolation/interpolation_5_2_00.wav" controls></audio>
+	        </div>
+        </div>
+        <div style="width: 100%; overflow:hidden">
+        	<div style="width: 25%; float:left">
+        		<img src="./figs/interpolation/interpolation_42_2_10.png" alt="Theta 1.0" width=70%>
+        		</img>
+        		<br>
+	        	<audio src="./figs/interpolation/interpolation_42_2_10.wav" controls></audio>
+	        </div>
+        	<div style="width: 25%; float:left">
+        		<img src="./figs/interpolation/interpolation_42_2_05.png" alt="Theta 0.5" width=70%>
+        		</img>
+        		<br>
+	        	<audio src="./figs/interpolation/interpolation_42_2_05.wav" controls></audio>
+	        </div>
+        	<div style="width: 25%; float:left">
+        		<img src="./figs/interpolation/interpolation_42_2_00.png" alt="Theta 0.0" width=70%>
+        		</img>
+        		<br>
+	        	<audio src="./figs/interpolation/interpolation_42_2_00.wav" controls></audio>
+	        </div>
+        </div>
+        <p><b>Figure 6.</b> Pitch interpolation. Left column: \(G(Z_1)\). Middle column: \(G((Z_1 + Z_2)/2)\). Right column: \(G(Z_2)\). \(Z_1\) and \(Z_2\) are the embeddings of samples from the test set. The generator interpolates the fundamental frequency with a simple arithmetic. The frequential displacement from left to right corresponds to \(5\) MIDI scales.
+        </p>
+        <div style="width: 100%; overflow:hidden">
+        	<div style="width: 25%; float:left">
+        		<img src="./figs/interpolation/interpolation_generation_12_32_Z1.png" alt="Z1" width=70%>
+        		</img>
+        		<br>
+	        	<audio src="./figs/interpolation/interpolation_generation_12_32_Z1.wav" controls></audio>
+	        </div>
+        	<div style="width: 25%; float:left">
+        		<img src="./figs/interpolation/interpolation_generation_12_32_Z2.png" alt="Z2" width=70%>
+        		</img>
+        		<br>
+	        	<audio src="./figs/interpolation/interpolation_generation_12_32_Z2.wav" controls></audio>
+	        </div>
+        </div>
+        <div style="width: 100%; overflow:hidden">
+        	<div style="width: 25%; float:left">
+        		<img src="./figs/interpolation/interpolation_generation_12_32_latent.png" alt="Latent interpolation" width=70%>
+        		</img>
+        		<br>
+	        	<audio src="./figs/interpolation/interpolation_generation_12_32_latent.wav" controls></audio>
+	        </div>
+        	<div style="width: 25%; float:left">
+        		<img src="./figs/interpolation/interpolation_generation_12_32_linear.png" alt="Linear interpolation" width=70%>
+        		</img>
+        		<br>
+	        	<audio src="./figs/interpolation/interpolation_generation_12_32_linear.wav" controls></audio>
+	        </div>
+        </div>
+        <p><b>Figure 7.</b> Interpolation in the latent and signal space. Top two signals: \(G(Z_1)\) and \(G(Z_2)\), where \(Z_1\), \(Z_2\) are Gaussian white noise realizations and \(G\) is trained on the Beethoven dataset. Bottom left: Latent interpolation \(G((Z_1 + Z_2) / 2)\). Bottom right: \((G(Z_1) + G(Z_2)) / 2\). The latent interpolation is able to merge both signals while preserving the musical structure.
+    </body>
+</html>
