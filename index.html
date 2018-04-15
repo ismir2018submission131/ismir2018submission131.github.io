@@ -9,6 +9,286 @@
     <body>
         <h1>ISMIR 2018 Submission 131</h1>
         <h2>Music Generation and Transformation with Moment Matching Scattering Inverse Networks</h2>
-        <p>This page will be shortly filled with all the audio examples.</p>
+        <p>This page presents the audio results presented in the paper (Figures <a href="#f4">4</a>, <a href="#f5">5</a>, <a href="#f6">6</a>, <a href="#f7">7</a>), along
+        with <a href="#supplementary">supplementary</a> results (both <a href="#quantitative">quantitative</a> and <a href="#qualitative">qualitative</a>). Best seen with Chrome browser.</p>
+
+        <h3>Figures of the paper with audio</h3>
+        <a name="f4">
+        <div style="width: 100%; overflow:hidden">
+        	<div style="width: 25%; float:left">
+        		<img src="./figs/reconstruction/nsynth/inverse_problem_testing_groundtruth_40.png" alt="Groundtruth NSynth" width=70%>
+        		</img>
+        		<br>
+	        	<audio src="./figs/reconstruction/nsynth/inverse_problem_testing_groundtruth_40.wav" controls></audio>
+	        </div>
+        	<div style="width: 25%; float: left">
+        		<img src="./figs/reconstruction/nsynth/inverse_problem_testing_recovered_40.png" alt="Recovered NSynth" width=70%></img>
+        		<br>
+        		<audio src="./figs/reconstruction/nsynth/inverse_problem_testing_recovered_40.wav" controls></audio>
+        	</div>
+        </div>
+        <div style="width: 100%; overflow:hidden">
+        	<div style="width: 25%; float:left">
+        		<img src="./figs/reconstruction/beethoven/inverse_problem_testing_groundtruth_10.png" alt="Groundtruth Beethoven" width=70%>
+        		</img>
+        		<br>
+	        	<audio type="audio/mp3" src="./figs/reconstruction/beethoven/inverse_problem_testing_groundtruth_10.wav" controls></audio>
+	        </div>
+        	<div style="width: 25%; float: left">
+        		<img src="./figs/reconstruction/beethoven/inverse_problem_testing_recovered_10.png" alt="Recovered Beethoven" width=70%></img>
+        		<br>
+        		<audio type="audio/wav" src="./figs/reconstruction/beethoven/inverse_problem_testing_recovered_10.wav" controls></audio>
+        	</div>
+        </div>
+        <p><b>Figure 4.</b> Reconstruction with the MM-SIN \(G\). Left: Original test sample \(X\). Right: Reconstruction \(G(Z)\) for \(Z=LS_J X\). Top: NSynth dataset.
+        	Bottom: Beethoven dataset. A different network was trained for each dataset.
+        </p>
+        </a>
+        <a name="f5">
+        <div style="width: 100%; overflow:hidden">
+        	<div style="width: 25%; float:left">
+        		<img src="./figs/generation/beethoven/generation_0.png" alt="Generated Beethoven" width=70%>
+        		</img>
+        		<br>
+	        	<audio src="./figs/generation/beethoven/generation_0.wav" controls></audio>
+	        </div>
+        </div>
+        <br>
+        <div style="width: 100%; overflow:hidden">
+                	<div style="width: 25%; float: left">
+        		<img src="./figs/generation/beethoven/generation_2.png" alt="Generated Beethoven" width=70%></img>
+        		<br>
+        		<audio src="./figs/generation/beethoven/generation_2.wav" controls></audio>
+        	</div>
+        </div>
+        <p><b>Figure 5.</b> Musical signal \(G(Z)\) generated from a white noise \(Z\) where \(G\) is learned on the Beethoven dataset. Each line corresponds to an independent sample obtained from a different white noise realization.
+        </p>
+        </a>
+
+        <a name="f6">
+        <div style="width: 100%; overflow:hidden">
+        	<div style="width: 25%; float:left">
+        		<img src="./figs/interpolation/interpolation_0_2_10.png" alt="Theta 1.0" width=70%>
+        		</img>
+        		<br>
+	        	<audio src="./figs/interpolation/interpolation_0_2_10.wav" controls></audio>
+	        </div>
+        	<div style="width: 25%; float:left">
+        		<img src="./figs/interpolation/interpolation_0_2_05.png" alt="Theta 0.5" width=70%>
+        		</img>
+        		<br>
+	        	<audio src="./figs/interpolation/interpolation_0_2_05.wav" controls></audio>
+	        </div>
+        	<div style="width: 25%; float:left">
+        		<img src="./figs/interpolation/interpolation_0_2_00.png" alt="Theta 0.0" width=70%>
+        		</img>
+        		<br>
+	        	<audio src="./figs/interpolation/interpolation_0_2_00.wav" controls></audio>
+	        </div>
+        </div>
+        <div style="width: 100%; overflow:hidden">
+        	<div style="width: 25%; float:left">
+        		<img src="./figs/interpolation/interpolation_5_2_10.png" alt="Theta 1.0" width=70%>
+        		</img>
+        		<br>
+	        	<audio src="./figs/interpolation/interpolation_5_2_10.wav" controls></audio>
+	        </div>
+        	<div style="width: 25%; float:left">
+        		<img src="./figs/interpolation/interpolation_5_2_05.png" alt="Theta 0.5" width=70%>
+        		</img>
+        		<br>
+	        	<audio src="./figs/interpolation/interpolation_5_2_05.wav" controls></audio>
+	        </div>
+        	<div style="width: 25%; float:left">
+        		<img src="./figs/interpolation/interpolation_5_2_00.png" alt="Theta 0.0" width=70%>
+        		</img>
+        		<br>
+	        	<audio src="./figs/interpolation/interpolation_5_2_00.wav" controls></audio>
+	        </div>
+        </div>
+        <div style="width: 100%; overflow:hidden">
+        	<div style="width: 25%; float:left">
+        		<img src="./figs/interpolation/interpolation_42_2_10.png" alt="Theta 1.0" width=70%>
+        		</img>
+        		<br>
+	        	<audio src="./figs/interpolation/interpolation_42_2_10.wav" controls></audio>
+	        </div>
+        	<div style="width: 25%; float:left">
+        		<img src="./figs/interpolation/interpolation_42_2_05.png" alt="Theta 0.5" width=70%>
+        		</img>
+        		<br>
+	        	<audio src="./figs/interpolation/interpolation_42_2_05.wav" controls></audio>
+	        </div>
+        	<div style="width: 25%; float:left">
+        		<img src="./figs/interpolation/interpolation_42_2_00.png" alt="Theta 0.0" width=70%>
+        		</img>
+        		<br>
+	        	<audio src="./figs/interpolation/interpolation_42_2_00.wav" controls></audio>
+	        </div>
+        </div>
+        <p><b>Figure 6.</b> Pitch interpolation. Left column: \(G(Z_1)\). Middle column: \(G((Z_1 + Z_2)/2)\). Right column: \(G(Z_2)\). \(Z_1\) and \(Z_2\) are the embeddings of samples from the test set. The generator interpolates the fundamental frequency with a simple arithmetic. The frequential displacement from left to right corresponds to \(5\) MIDI scales.
+        </p>
+        </a>
+        
+        <a name="f7">
+        <div style="width: 100%; overflow:hidden">
+        	<div style="width: 25%; float:left">
+        		<img src="./figs/interpolation/interpolation_generation_12_32_Z1.png" alt="Z1" width=70%>
+        		</img>
+        		<br>
+	        	<audio src="./figs/interpolation/interpolation_generation_12_32_Z1.wav" controls></audio>
+	        </div>
+        	<div style="width: 25%; float:left">
+        		<img src="./figs/interpolation/interpolation_generation_12_32_Z2.png" alt="Z2" width=70%>
+        		</img>
+        		<br>
+	        	<audio src="./figs/interpolation/interpolation_generation_12_32_Z2.wav" controls></audio>
+	        </div>
+        </div>
+        <div style="width: 100%; overflow:hidden">
+        	<div style="width: 25%; float:left">
+        		<img src="./figs/interpolation/interpolation_generation_12_32_latent.png" alt="Latent interpolation" width=70%>
+        		</img>
+        		<br>
+	        	<audio src="./figs/interpolation/interpolation_generation_12_32_latent.wav" controls></audio>
+	        </div>
+        	<div style="width: 25%; float:left">
+        		<img src="./figs/interpolation/interpolation_generation_12_32_linear.png" alt="Linear interpolation" width=70%>
+        		</img>
+        		<br>
+	        	<audio src="./figs/interpolation/interpolation_generation_12_32_linear.wav" controls></audio>
+	        </div>
+        </div>
+        <p><b>Figure 7.</b> Interpolation in the latent and signal space. Top two signals: \(G(Z_1)\) and \(G(Z_2)\), where \(Z_1\), \(Z_2\) are Gaussian white noise realizations and \(G\) is trained on the Beethoven dataset. Bottom left: Latent interpolation \(G((Z_1 + Z_2) / 2)\). Bottom right: \((G(Z_1) + G(Z_2)) / 2\). The latent interpolation is able to merge both signals while preserving the musical structure.
+        </a>
+        <h3><a name="supplementary">A) Supplementary results</a></h3>
+        <h4><a name="quantitative">Quantative results</a></h4>
+        <table border="1">
+            <tr>
+                <th>Data split / Method</th>
+                <th>MSE</th>
+                <th>Perceptual</th>
+                <th>Perceptual + Moment Matching</th>
+            </tr>
+            <tr>
+                <th>Train</th>
+                <th>0.56</th>
+                <th><font color='blue'>0.16</font></th>
+                <th>0.23</th>
+            </tr>
+            <tr>
+                <th>Test</th>
+                <th>0.77</th>
+                <th>0.37</th>
+                <th><font color='blue'>0.31</font></th>
+            </tr>
+            <tr>
+                <th>Relative gap test/train (dB)</th>
+                <th>1.36</th>
+                <th>3.53</th>
+                <th><font color='blue'>1.21</font></th>
+            </tr>
+        </table>
+        <p><b>Table A.1</b> Reconstruction error results on the Beethoven dataset. The perceptual metric (\( \|S_K x_i - S_K(G(z_i))\|_1 \)) improves over the mean-square error (MSE) metric (\( \|x_i - G(z_i)\|_2^2 \)). Further, adding the moment-matching term during training improves the reconstruction results and the generalization.</p>
+        
+        <table border="1">
+            <tr>
+                <th>Method</th>
+                <th>MSE</th>
+                <th>Perceptual</th>
+                <th>Perceptual + Moment Matching</th>
+                <th>Testing set</th>
+            </tr>
+            <tr>
+                <th>Moment-Matching term</th>
+                <th>24.5</th>
+                <th>38.7</th>
+                <th><font color='blue'>0.176</font></th>
+                <th>0.334</th>
+            </tr>
+        </table>
+        <p><b>Table A.2</b> Moment-matching loss term on the Beethoven dataset. Notice how adding the moment-matching term to the loss allows to create samples whose distribution is as close to the training set as the testing set.</p>
+        <h4><a name="qualitative">Qualitative results</a></h4>
+        We present additional reconstruction results on the NSynth and Beethoven datasets.
+        
+        <div style="width: 100%; overflow:hidden">
+        	<div style="width: 25%; float:left">
+        		<img src="./figs/supplementary/mse_vs_perceptual/mse/inverse_problem_testing_groundtruth_0.png" alt="Groundtruth Beethoven 1" width=70%>
+        		</img>
+        		<br>
+	        	<audio type="audio/mp3" src="./figs/supplementary/mse_vs_perceptual/mse/inverse_problem_testing_groundtruth_0.wav" controls></audio>
+	        </div>
+        	<div style="width: 25%; float: left">
+        		<img src="./figs/supplementary/mse_vs_perceptual/mse/inverse_problem_testing_recovered_0.png" alt="Recovered MSE" width=70%></img>
+        		<br>
+        		<audio type="audio/wav" src="./figs/supplementary/mse_vs_perceptual/mse/inverse_problem_testing_recovered_0.wav" controls></audio>
+        	</div>
+        	<div style="width: 25%; float: left">
+        		<img src="./figs/supplementary/mse_vs_perceptual/perceptual/inverse_problem_testing_recovered_0.png" alt="Recovered Perceptual" width=70%></img>
+        		<br>
+        		<audio type="audio/wav" src="./figs/supplementary/mse_vs_perceptual/perceptual/inverse_problem_testing_recovered_0.wav" controls></audio>
+        	</div>            
+        </div>
+        <div style="width: 100%; overflow:hidden">
+        	<div style="width: 25%; float:left">
+        		<img src="./figs/supplementary/mse_vs_perceptual/perceptual/inverse_problem_testing_groundtruth_50.png" alt="Groundtruth Beethoven 2" width=70%>
+        		</img>
+        		<br>
+	        	<audio type="audio/mp3" src="./figs/supplementary/mse_vs_perceptual/perceptual/inverse_problem_testing_groundtruth_50.wav" controls></audio>
+	        </div>
+        	<div style="width: 25%; float: left">
+        		<img src="./figs/supplementary/mse_vs_perceptual/mse/inverse_problem_testing_recovered_50.png" alt="Recovered MSE" width=70%></img>
+        		<br>
+        		<audio type="audio/wav" src="./figs/supplementary/mse_vs_perceptual/mse/inverse_problem_testing_recovered_50.wav" controls></audio>
+        	</div>
+        	<div style="width: 25%; float: left">
+        		<img src="./figs/supplementary/mse_vs_perceptual/perceptual/inverse_problem_testing_recovered_50.png" alt="Recovered Perceptual" width=70%></img>
+        		<br>
+        		<audio type="audio/wav" src="./figs/supplementary/mse_vs_perceptual/perceptual/inverse_problem_testing_recovered_50.wav" controls></audio>
+        	</div>            
+        </div>
+        
+        <p><b>Figure A.1</b> Comparison of the reconstruction with the mean-square error metric and the perceptual metric on the testing part of the Beethoven dataset. Each line corresponds to a different example. The left column is the original, the middle column MSE and the right column the perceptual metric.
+        Notice the clear inability of the MSE network to generalize.</p>
+        
+        
+        <div style="width: 100%; overflow:hidden">
+        	<div style="width: 25%; float:left">
+        		<img src="./figs/supplementary/moment_matching/with_moment/inverse_problem_testing_groundtruth_30.png" alt="Groundtruth Beethoven 3" width=70%>
+        		</img>
+        		<br>
+	        	<audio type="audio/mp3" src="./figs/supplementary/moment_matching/with_moment/inverse_problem_testing_groundtruth_30.wav" controls></audio>
+	        </div>
+        	<div style="width: 25%; float: left">
+        		<img src="./figs/supplementary/moment_matching/without_moment/inverse_problem_testing_recovered_30.png" alt="Recovered without moment" width=70%></img>
+        		<br>
+        		<audio type="audio/wav" src="./figs/supplementary/moment_matching/without_moment/inverse_problem_testing_recovered_30.wav" controls></audio>
+        	</div>
+        	<div style="width: 25%; float: left">
+        		<img src="./figs/supplementary/moment_matching/with_moment/inverse_problem_testing_recovered_30.png" alt="Recovered with moment" width=70%></img>
+        		<br>
+        		<audio type="audio/wav" src="./figs/supplementary/moment_matching/with_moment/inverse_problem_testing_recovered_30.wav" controls></audio>
+        	</div>            
+        </div>
+        <div style="width: 100%; overflow:hidden">
+        	<div style="width: 25%; float:left">
+        		<img src="./figs/supplementary/moment_matching/with_moment/inverse_problem_testing_groundtruth_40.png" alt="Groundtruth Beethoven 4" width=70%>
+        		</img>
+        		<br>
+	        	<audio type="audio/mp3" src="./figs/supplementary/moment_matching/with_moment/inverse_problem_testing_groundtruth_40.wav" controls></audio>
+	        </div>
+        	<div style="width: 25%; float: left">
+        		<img src="./figs/supplementary/moment_matching/without_moment/inverse_problem_testing_recovered_40.png" alt="Recovered without moment" width=70%></img>
+        		<br>
+        		<audio type="audio/wav" src="./figs/supplementary/moment_matching/without_moment/inverse_problem_testing_recovered_40.wav" controls></audio>
+        	</div>
+        	<div style="width: 25%; float: left">
+        		<img src="./figs/supplementary/moment_matching/with_moment/inverse_problem_testing_recovered_40.png" alt="Recovered with moment" width=70%></img>
+        		<br>
+        		<audio type="audio/wav" src="./figs/supplementary/moment_matching/with_moment/inverse_problem_testing_recovered_40.wav" controls></audio>
+        	</div>            
+        </div>
+        <p><b>Figure A.2</b> Comparison of the reconstruction with and without the moment matching term, on the testing part of the Beethoven dataset. Each line corresponds to a different example. The left column is the original, the middle column is the reconstruction from a network trained without the moment matching term and the right column the reconstruction from a network trained with the moment matching term.
+        Notice the clear improvement in quality when adding the moment matching term.</p>
     </body>
 </html>
